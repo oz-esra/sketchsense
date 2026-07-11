@@ -1,8 +1,48 @@
-SketchSense 🎨→💻Draw a wireframe. Get working code. Instantly.SketchSense uses Gemini 2.0 Flash Vision to transform hand-drawn UI sketches into production-ready HTML/CSS/JS — live, streaming, in seconds.✨ Features🖊️ Full Drawing Suite — Pen, eraser, line, arrow, rectangle, ellipse tools📸 Image Upload — Import photos of paper sketches or existing mockups⚡ Streaming Generation — Watch code appear token by token via Gemini 2.0 Flash🔄 Iterative Refinement — Describe changes in plain text, AI updates the code👁️ Live Preview — Real-time iframe preview of the generated HTML💾 Export — Copy code or download as .html⌨️ Keyboard Shortcuts — P/E/L/A/R/O for tools, Ctrl+Z undo, Ctrl+Enter generate🚀 Quick Start1. PrerequisitesNode.js 18+A Gemini API Key (free)2. Install & RunBashgit clone https://github.com/oz-esra/sketchsense
+# SketchSense 🎨→💻
+
+**Draw a wireframe. Get working code. Instantly.**
+
+SketchSense uses **Gemini 2.0 Flash Vision** to transform hand-drawn UI sketches into production-ready HTML/CSS/JS — live, streaming, in seconds.
+
+---
+
+## ✨ Features
+
+- **🖊️ Full Drawing Suite** — Pen, eraser, line, arrow, rectangle, ellipse tools
+- **📸 Image Upload** — Import photos of paper sketches or existing mockups
+- **⚡ Streaming Generation** — Watch code appear token by token via Gemini 2.0 Flash
+- **🔄 Iterative Refinement** — Describe changes in plain text, AI updates the code
+- **👁️ Live Preview** — Real-time iframe preview of the generated HTML
+- **💾 Export** — Copy code or download as `.html`
+- **⌨️ Keyboard Shortcuts** — P/E/L/A/R/O for tools, Ctrl+Z undo, Ctrl+Enter generate
+
+---
+
+## 🚀 Quick Start
+
+### 1. Prerequisites
+- Node.js 18+
+- A [Gemini API Key](https://aistudio.google.com/app/apikey) (free)
+
+### 2. Install & Run
+
+```bash
+git clone [https://github.com/oz-esra/sketchsense](https://github.com/oz-esra/sketchsense)
 cd sketchsense
 npm install
 npm run dev
-Open http://localhost:51733. Get a Gemini API KeyGo to Google AI StudioClick "Create API Key"Paste it into SketchSense's API Key field and click "Kaydet"🏗️ ArchitectureSketchSense
+Open http://localhost:5173
+
+3. Get a Gemini API Key
+Go to Google AI Studio
+
+Click "Create API Key"
+
+Paste it into SketchSense's API Key field and click "Kaydet"
+
+## ✨ Features
+
+SketchSense
 ├── src/
 │   ├── App.jsx              # Main app — state, layout, orchestration
 │   ├── index.css            # Design system — dark studio theme
@@ -13,7 +53,8 @@ Open http://localhost:51733. Get a Gemini API KeyGo to Google AI StudioClick "Cr
 ├── index.html
 ├── vite.config.js
 └── package.json
-How It WorksUser draws on Canvas
+
+How It WorksPlaintextUser draws on Canvas
        ↓
 Canvas → toDataURL() → base64 PNG
        ↓
