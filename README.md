@@ -1,3 +1,4 @@
+```markdown
 # SketchSense 🎨→💻
 
 **Draw a wireframe. Get working code. Instantly.**
@@ -31,17 +32,22 @@ git clone [https://github.com/oz-esra/sketchsense](https://github.com/oz-esra/sk
 cd sketchsense
 npm install
 npm run dev
-Open http://localhost:5173
 
-3. Get a Gemini API Key
-Go to Google AI Studio
+```
 
-Click "Create API Key"
+Open `http://localhost:5173`
 
-Paste it into SketchSense's API Key field and click "Kaydet"
+### 3. Get a Gemini API Key
 
-## ✨ Features
+1. Go to [Google AI Studio](https://aistudio.google.com/app/apikey)
+2. Click "Create API Key"
+3. Paste it into SketchSense's API Key field and click "Kaydet"
 
+---
+
+## 🏗️ Architecture
+
+```text
 SketchSense
 ├── src/
 │   ├── App.jsx              # Main app — state, layout, orchestration
@@ -54,7 +60,12 @@ SketchSense
 ├── vite.config.js
 └── package.json
 
-How It WorksPlaintextUser draws on Canvas
+```
+
+### How It Works
+
+```text
+User draws on Canvas
        ↓
 Canvas → toDataURL() → base64 PNG
        ↓
@@ -65,4 +76,51 @@ Gemini 2.0 Flash Vision API
   - Streams response token by token
        ↓
 Preview iframe → srcdoc → live render
-🛠️ Tech StackLayerTechnologyUI FrameworkReact 18 + ViteAI ModelGemini 2.0 Flash (Vision + Generation)AI SDK@google/generative-aiDrawingHTML5 Canvas APIStylingPure CSS⌨️ Keyboard ShortcutsKeyActionPPen toolEEraser toolLLine toolAArrow toolRRectangle toolOEllipse toolCtrl+ZUndoCtrl+EnterGenerate / Update UI🎯 Use CasesRapid Prototyping — Turn napkin sketches into testable prototypesDesign Handoff — Sketch a design, get the code directlyTeaching — Show students how wireframes map to codeHackathons — Build MVPs at the speed of thought📄 LicenseMIT — Built with ❤️ for the BTK Akademi Hackathon
+
+```
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+| --- | --- |
+| **UI Framework** | React 18 + Vite |
+| **AI Model** | Gemini 2.0 Flash (Vision + Generation) |
+| **AI SDK** | `@google/generative-ai` |
+| **Drawing** | HTML5 Canvas API |
+| **Styling** | Pure CSS |
+
+---
+
+## ⌨️ Keyboard Shortcuts
+
+| Key | Action |
+| --- | --- |
+| `P` | Pen tool |
+| `E` | Eraser tool |
+| `L` | Line tool |
+| `A` | Arrow tool |
+| `R` | Rectangle tool |
+| `O` | Ellipse tool |
+| `Ctrl+Z` | Undo |
+| `Ctrl+Enter` | Generate / Update UI |
+
+---
+
+## 🎯 Use Cases
+
+* **Rapid Prototyping** — Turn napkin sketches into testable prototypes
+* **Design Handoff** — Sketch a design, get the code directly
+* **Teaching** — Show students how wireframes map to code
+* **Hackathons** — Build MVPs at the speed of thought
+
+---
+
+## 📄 License
+
+MIT — Built with ❤️ for the BTK Akademi Hackathon
+
+```
+
+```
